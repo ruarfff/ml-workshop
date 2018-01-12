@@ -5,11 +5,27 @@ One of the biggest challenges in a technical workshop is getting all the develop
 
 This document will attempt to provide enough information to make sure you can set everything up before the actual workshop. 
 
-For support during the setup proccess, please join this slack channel: https://psapps.slack.com/archives/C8R129GRK
-
 For this workshop we will be using [Python](https://www.python.org/) and [Tensorflow](https://www.tensorflow.org/).
 
 Ideally we would use [Pytorch](http://pytorch.org/) but this is [not currently supported on Windows](https://github.com/pytorch/pytorch/issues/494) and due to the high usage of Windows in this group, we will go with Tensorflow, which is also an amazing framework. 
+
+## Download this 
+
+If you are familiar with the [git](https://git-scm.com/) version control system, then please clone this repository.
+
+If not, then you can download this to your machine using the downlaod link provided. 
+
+If you are viewing this in bitbucket, that will be here:
+
+![alt text](img/Download-bitbucket.PNG "Download")
+
+If you are viewing on github, it will be here:
+
+![alt text](img/Download-github.PNG "Download")
+
+## Support
+
+For support during the setup proccess, please join this slack channel: https://psapps.slack.com/archives/C8R129GRK
 
 ## Setup instructions
 
