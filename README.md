@@ -13,13 +13,15 @@ Ideally we would use [Pytorch](http://pytorch.org/) but this is [not currently s
 
 ## Setup instructions
 
-1. Install Python
+For the instructions here, I am trying to keep it simple and will install things from scratch, step by step. If you are feeling adventurous or are comfortable with python already, a tool called [Anaconda](https://www.anaconda.com/download/) can make a lot of this stuff easier to do as it installs somme of the things we need automatically. I am avoiding that here and keeping the instuctions as basic as possible. 
 
-__Linux or OSX__
+### 1. Install Python
+
+#### Linux or OSX
 
 If you are on Linux or OSX, try to ensure you are using Python 3 or, even better, skip to the 'Install Tensorflow' step and install with virtaalenv!
 
-__Windows__
+#### Windows
 
 For Windows, install this: https://www.python.org/downloads/release/python-363/
 
@@ -27,7 +29,7 @@ You can download the installer from here (assuming everyone has 64 bit windows a
 
 Just do the default installation but also select 'Add Python to Path' to save you having to do it yourself. 
 
-![alt text](img/python-install.PNG "Logo Title Text 1")
+![alt text](img/python-install.PNG "Python Installation")
 
 Crack open a fresh terminal (not one you had open before installing Python).
 
@@ -50,13 +52,13 @@ You're in the [Interactive Python Interpreter](https://docs.python.org/3/tutoria
 Type `exit()` to leave Python. 
 
 
-1. Install Tensorflow
+### 2. Install Tensorflow
 
 There are really good instructions on how to proceed here: https://www.tensorflow.org/install
 
 I recommend you install the CPU Only version. 
 
-#### What I did:
+##### What I did:
 
 To support what will most likely be the most troublesome setup, I will be using Windows for the workshop. What follows are exactly the steps I took to install Tensorflow. I am using the Windows `cmd` [terminal](https://en.wikipedia.org/wiki/Cmd.exe).
 
@@ -128,3 +130,48 @@ You may have noticed this warning:
 
 Don't worry about it. It could be a problem when building a production system where performance is important but for this workshop it's not a problem.
 
+
+### 3. Install jupyter
+
+We will use [Jupyter](https://jupyter.org/) to run our code in 'notebooks'. Notebooks allow you to essentially write and run code in a browser through an application being served locally. You can mix markdown, to document what you are doing, with runnable python code that you execute right there in the notebook. It's a really great tool. While you could keep your code in normal python scripts and build your ML applications like any normal application, in my experience, most ML applicaions begin as a notebook and only become 'real applications/services' if there's a very good reason for it. 
+
+The installation instructons [on the jupyter site](https://jupyter.org/install) are very straight forward. 
+
+This is what I did: 
+
+`pip3 install jupyter`
+
+Verifing the install:
+
+`jupyter notebook`
+
+This should open a browser window that will list any files in the directory you ran the command from.
+
+### 4. Install a bunch of libraries
+
+We will use a few python libraries in this workshop. To be able to import them in to your scripts and notebooks, you need to install them. If you used Anaconda, then these are probably already installed but if not, use pip to install them by copying and running this command:
+
+```
+pip3 install --upgrade scikit-learn numpy pandas scipy h5py pillow matplotlib python-gflags ipython
+```
+
+> Note, if you are using Linux and virtualenv,fire up the tensorflow virtualenv before installing the libraries (usually by running `source source ~/tensorflow/bin/activate`). Your prompt should change to look something like `(tensorflow)$`
+
+### 5. Run the checklist notebook
+
+In your command line terminal, make sure you are in the root of this repository. So if you dowloaded this repository to a folder called 'Dev' in your home folder `cd %userprofile%\Dev\ml-workshop` (on Windows) or `cd ~\Dev\ml-workshop`. 
+
+Run jupyter notebook
+
+`jupyter notebook`
+
+A browser window listing the contents of the repository should be visible.
+
+![alt text](img/jupyter-home.PNG "Initial Jupyter page")
+
+Click in to checklist.ipynb and follow the instructions there.
+
+![alt text](img/jupyter-checklist.PNG "Checklist Jupyter page")
+
+
+You should be all set now. See you at the workshop!
