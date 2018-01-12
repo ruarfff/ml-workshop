@@ -63,7 +63,7 @@ I recommend you install the CPU Only version.
 To support what will most likely be the most troublesome setup, I will be using Windows for the workshop. What follows are exactly the steps I took to install Tensorflow. I am using the Windows `cmd` [terminal](https://en.wikipedia.org/wiki/Cmd.exe).
 
 
-Once you have installed Python in step 1, you will haev a program called `pip3` now available in your terminal. To install Tensorflow run `pip3 install --upgrade tensorflow`
+Once you have installed Python in step 1, you will have a program called `pip3` now available in your terminal. To install Tensorflow run `pip3 install --upgrade tensorflow`
 
 For me that looked like this:
 
