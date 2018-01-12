@@ -13,7 +13,7 @@ Ideally we would use [Pytorch](http://pytorch.org/) but this is [not currently s
 
 If you are familiar with the [git](https://git-scm.com/) version control system, then please clone this repository.
 
-If not, then you can download this to your machine using the downlaod link provided. 
+If not, then you can download this to your machine using the download link provided. 
 
 If you are viewing this in bitbucket, that will be here:
 
