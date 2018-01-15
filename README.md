@@ -29,13 +29,13 @@ For support during the setup proccess, please join this slack channel: https://p
 
 ## Setup instructions
 
-For the instructions here, I am trying to keep it simple and will install things from scratch, step by step. If you are feeling adventurous or are comfortable with python already, a tool called [Anaconda](https://www.anaconda.com/download/) can make a lot of this stuff easier to do as it installs somme of the things we need automatically. I am avoiding that here and keeping the instuctions as basic as possible. 
+For the instructions here, I am trying to keep it simple and will install things from scratch, step by step. 
 
 ### 1. Install Python
 
 #### Linux or OSX
 
-If you are on Linux or OSX, try to ensure you are using Python 3 or, even better, skip to the 'Install Tensorflow' step and install with virtaalenv!
+If you are on Linux or OSX, try to ensure you are using Python 3 or, even better, skip to the 'Install Tensorflow' step and install with virtualenv!
 
 #### Windows
 
@@ -155,6 +155,8 @@ The installation instructons [on the jupyter site](https://jupyter.org/install) 
 
 This is what I did: 
 
+*Important: if you installed using virtualenv, be sure to activate it with `source ~/tensorflow/bin/activate` and your prompt looks like `(tensorflow)$` before running `pip3` as virtualenv installs dependencies to its own isolated environnment*
+
 `pip3 install jupyter`
 
 Verifing the install:
@@ -167,11 +169,11 @@ This should open a browser window that will list any files in the directory you 
 
 We will use a few python libraries in this workshop. To be able to import them in to your scripts and notebooks, you need to install them. If you used Anaconda, then these are probably already installed but if not, use pip to install them by copying and running this command:
 
+*Important: if you installed using virtualenv, be sure to activate it with `source ~/tensorflow/bin/activate` and your prompt looks like `(tensorflow)$` before running `pip3` as virtualenv installs dependencies to its own isolated environnment*
+
 ```
 pip3 install --upgrade scikit-learn numpy pandas scipy h5py pillow matplotlib python-gflags ipython
 ```
-
-> Note, if you are using Linux and virtualenv,fire up the tensorflow virtualenv before installing the libraries (usually by running `source source ~/tensorflow/bin/activate`). Your prompt should change to look something like `(tensorflow)$`
 
 ### 5. Run the checklist notebook
 
@@ -180,6 +182,8 @@ In your command line terminal, make sure you are in the root of this repository.
 Run jupyter notebook
 
 `jupyter notebook`
+
+If you're using virtualenv: `(tensorflow)$ jupyter notebook`
 
 A browser window listing the contents of the repository should be visible.
 
