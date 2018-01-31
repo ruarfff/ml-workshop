@@ -7,7 +7,7 @@ This document will attempt to provide enough information to make sure you can se
 
 For this workshop we will be using [Python](https://www.python.org/) and [Tensorflow](https://www.tensorflow.org/).
 
-Ideally we would use [Pytorch](http://pytorch.org/) but this is [not currently supported on Windows](https://github.com/pytorch/pytorch/issues/494) and due to the high usage of Windows in this group, we will go with Tensorflow, which is also an amazing framework. 
+I focus on Windows here and use Windows in the workshop since it usually gives the most trouble for participants but everything should work simlarly on Mac & Linux. I have tested everything on both Mac & Linux and would usually use Linux for development but find most participants use Windows so need to cater for that here.
 
 ## Download this 
 
@@ -15,21 +15,12 @@ If you are familiar with the [git](https://git-scm.com/) version control system,
 
 If not, then you can download this to your machine using the download link provided. 
 
-If you are viewing this in bitbucket, that will be here:
-
-![alt text](img/Download-bitbucket.PNG "Download")
-
-If you are viewing on github, it will be here:
 
 ![alt text](img/Download-github.PNG "Download")
 
-## Support
-
-For support during the setup proccess, please join this slack channel: https://psapps.slack.com/archives/C8R129GRK
-
 ## Setup instructions
 
-For the instructions here, I am trying to keep it simple and will install things from scratch, step by step. 
+For the instructions here, I am trying to keep it simple and will install things from scratch, step by step but if you are familiar with package managers for this, feel free to use those. 
 
 ### 1. Install Python
 
